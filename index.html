@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>JavaScript QuizAPP</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quiz App</h1>
+    <div class="quiz-box">
+        <div class="question-box"></div>
+        <div class="option-box">
+            <input type="radio" name="answer" id="option1" value="a">
+            <label for="option1"></label><br>
+            <input type="radio" name="answer" id="option2" value="b">
+            <label for="option2"></label><br>
+            <input type="radio" name="answer" id="option3" value="c">
+            <label for="option3"></label><br>
+            <input type="radio" name="answer" id="option4" value="d">
+            <label for="option4"></label><br>
+            
+        </div>
+        <div class="button-box">
+            <button id="prev-btn" onclick="prevQuestion()">Prev Question</button>
+            <button id="submit-btn" onclick="submitQuestion()">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

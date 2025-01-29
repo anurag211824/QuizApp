@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&family=Bebas+Neue&family=Open+Sans:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.quiz-box {
+    background: white;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.question-box {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.option-box {
+    margin-bottom: 1rem;
+}
+
+.option-box input {
+    margin-right: 10px;
+}
+
+.option-box label {
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#prev-btn, #submit-btn {
+    background-color: black;
+    color: white;
+}
+
+#prev-btn:hover, #submit-btn:hover {
+    background-color: rgb(84, 84, 84);
+}
+
+.res {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.res h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.res p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.res p:first-of-type {
+    color: green;
+    font-weight: bold;
+}
+
+.res p:last-of-type {
+    color: red;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .quiz-box {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+       font-size: 13px;
+    }
+}
