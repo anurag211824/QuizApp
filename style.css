@@ -57,6 +57,7 @@ h1 {
 .button-box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
 }
 
@@ -68,7 +69,17 @@ button {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-
+#timer-value{
+    padding: 10px 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    color: white;
+  
+}
 #prev-btn, #submit-btn {
     background-color: black;
     color: white;
@@ -133,6 +144,16 @@ th {
 tr:nth-child(even) {
     background: #f9f9f9;
 }
+.res button{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    color: white;
+}
 
 @media (max-width: 550px) {
     h1 {
@@ -153,4 +174,12 @@ tr:nth-child(even) {
         margin-top: 10px;
        font-size: 13px;
     }
+    .button-box{
+        flex-direction: column;
+    }
+    #timer-value{
+      text-align: center;
+        width: 100%;
+    }
+
 }
